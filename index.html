@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Tugas-13</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+<body>
+    <div class="w3-container">
+        <img src="css/unikom-du.jpg" alt="unikombanner" style="height: 50%;width: 100%;">
+    </div>
+
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="Menu('unikomm')">Informatika</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Pemuja Ganjar')">Pemuja Ganjar</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Maskot')">Maskot</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Profil')">Profil</button>
+    </div>
+    <div id="unikomm" class="w3-container char w3-animate-fading" style="display: none;">
+        <h2>INFORMATIKA 2</h2>
+        <img src="css/unikomm.jpg" alt="unikom"> 
+    </div>
+	
+    <div id="Pemuja Ganjar" class="w3-container char w3-animate-bottom" style="display: none;">
+        <h2>Pemuja Ganjar</h2>
+        <img src="css/Pemuja Ganjar.jpg" alt="Pemuja Ganjar">
+    </div>
+
+    <div id="Maskot" class="w3-container char w3-animate-top" style="display: none;">
+        <h2>Maskot</h2>
+        <img src="css/maskot if2.jpg" alt="maskot">
+    </div>
+
+    <div id="Profil" class="w3-container char w3-animate-zoom" style="display: none;">
+        <h1>Profil</h1>
+        <img src="css/blek.jpg" alt="blek">
+        <p>
+            <center>
+                <h2>Nama  : Dani Nurhalim</h2>
+                <h2>Nim   : 10123076</h2>
+                <h2>Kelas : Informatika 2</h2>
+            </center>
+        </p>
+        
+    </div>
+
+    <script>
+        function Menu(Karakter) {
+            var i;
+            var x = document.getElementsByClassName("char");
+            for (i = 0;i < x.length;i++){
+                x[i].style.display = "none";
+            }
+            document.getElementById(Karakter).style.display = "block";
+        }
+    </script>
+</body>
+</html>
